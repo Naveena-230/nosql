@@ -1,0 +1,112 @@
+9> SADD CUS_DETAIL:id 100 102 104 105
+(integer) 4
+127.0.0.1:6379> SADD CUS_DETAIL:name anu raj kavi ram
+(integer) 4
+127.0.0.1:6379> SADD CUS_DETAIL:phone 901452617 936165112 942907687 987042832
+(integer) 4
+127.0.0.1:6379> SADD CUS_DETAIL:email an@gmail.com raj@gmail.com kavi@gmail.com ram@gmail.com
+(integer) 4
+127.0.0.1:6379> SADD CUS_DETAIL:city erode karur trichy selam
+(integer) 4
+127.0.0.1:6379> SADD S_DETAIL:id s1 s2 s3
+(integer) 3
+127.0.0.1:6379> SADD S_DETAIL:exp 5 3 4
+(integer) 3
+127.0.0.1:6379> SADD S_DETAIL:salary 20000 18000 19000
+(integer) 3
+127.0.0.1:6379> SADD STORE_DETAIL:name kannan kumaran maruthi
+(integer) 3
+127.0.0.1:6379> SADD STORE_DETAIL:city kangayam thindal namakkal
+(integer) 3
+127.0.0.1:6379> SADD STORE_DETAIL:phno 6345129024 7812459033 9807654312
+(integer) 3
+127.0.0.1:6379> SADD ORDER_ITEM:id i01 i02 i03 i04
+(integer) 4
+127.0.0.1:6379> SADD ORDER_ITEM:iname toy book pen bag
+(integer) 4
+127.0.0.1:6379> SADD ORDER_ITEM:quantity 3 6 2 7
+(integer) 4
+127.0.0.1:6379> SADD ORDER_ITEM:price 550 840 60 1200
+(integer) 4
+127.0.0.1:6379> SMEMBERS CUS_DETAIL
+1)"anu"
+2)"id"
+3)"901452617"
+4)"102"
+5)"erode"
+6)"raj"
+7)"selam"
+8)"raj@gmail.com"
+9)"name"
+10)":"
+11)"anu@gmail.com"
+12)"city"
+13)"105"
+14)"trichy"
+15)"100"
+16)"kavi@gmail.com"
+17)"ram"
+18)"email"
+19)"phone"
+20)"ram@gmail.com"
+21)"kavi"
+22)"936165112"
+23)"104"
+24)"karur"
+25)"942907687"
+26)"987042832"
+127.0.0.1:6379>SMEMBERS S_DETAIL
+1)"exp"
+2)"4"
+3)"id"
+4)"3"
+5)"s1"
+6)":"
+7)"18000"
+8)"s3"
+9)"salary"
+10)"s2"
+11)"20000"
+12)"5"
+13)"19000"
+127.0.0.1:6379>SMEMBERS STORE_DETAIL
+1)"city"
+2)"phno"
+3)"thindal"
+4)"name"
+5)"maruthi"
+6)"6345129024"
+7)"kangayam"
+8)"980765432"
+9)"namakkal"
+10)":"
+11)"7812459033"
+12)"kumaran"
+13)"kannan"
+127.0.0.1:6379>SMEMBERS ORDER_ITEM
+1)"bag"
+2)"7"
+3)"id"
+4)"i03"
+5)"1200"
+6)"toy"
+7)"iname"
+8)"3"
+9)"i01"
+10)"840"
+11)"pen"
+12)":"
+13)"2"
+14)"i02"
+15)"550"
+16)"book"
+17)"quantity"
+18)"6"
+19)"i04"
+20)"60"
+21)"price"
+127.0.0.1:6379>save
+OK
+
+
+
